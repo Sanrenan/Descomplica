@@ -4,4 +4,4 @@ path C:\Program Files\Java\jdk-18.0.1.1\bin - indica o caminho do compilado e ex
 
 cd - para ir até o diretório onde estão os arquivos java.
 
-*dir.java - verifica se os arquivos java estao no diretorio q você configurou o path.
+dir *.java - verifica se os arquivos java estao no diretorio q você configurou o path.
