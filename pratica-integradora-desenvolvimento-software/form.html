@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="https://pruu.herokuapp.com/dump/test">
+
+        <fieldset>
+            <input id="assunto" name="assunto" type="text">
+            <input id="senha" name="senha" type="password">
+            <input id="idade" name="idade" type="number">
+            <input id="email" name="email" type="email">
+            <input id="dataNascimento" name="dataNascimento" type="date">
+            <input id="corFavorita" name="corFavorita" type="color">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <select name="motivo" id="motivo">
+                <option value="semMotivo">Não Selecionado</option>
+                <option value="pqSim">Porque Sim</option>
+                <option value="elogio">Aula Legal</option>
+                <option value="reclamacao">Aula Péssima.</option>
+
+
+            </select>
+            <input name="file" id="file" type="file" multiple>
+
+
+            <textarea></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>
