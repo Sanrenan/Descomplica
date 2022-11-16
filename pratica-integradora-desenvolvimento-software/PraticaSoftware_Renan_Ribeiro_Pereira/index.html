@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <form>
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" id="nome" name="nome">
+        <label for="sobrenome" class="form-label">Sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" id="email" name="email">
+        <button type="button" onclick="enviarDados()">Enviar</button>
+    </form>
+    <div id="usuario"></div>
+
+    <script>
+        function enviarDados(){
+            var nome = document.getElementById('nome').value;
+            var sobrenome = document.getElementById('sobrenome').value;
+            var email = document.getElementById('email').value;
+            var usuario = document.getElementById('usuario');
+
+            var saudacoes = `Olá ${nome} ${sobrenome}, seu email é ${email}`;
+
+
+
+            usuario.innerHTML = saudacoes;
+
+        }
+    </script>
 
 </body>
 </html>
